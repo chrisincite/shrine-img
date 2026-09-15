@@ -1,0 +1,5 @@
+# 照片檔名一旦發佈就不再改內容（新照片是新編號），所以可以放心長快取。
+# 沒用 immutable：萬一真的要換掉同名照片，30 天到期還有機會自然更新。
+/img/*
+  Cache-Control: public, max-age=2592000
+  Access-Control-Allow-Origin: *
